@@ -1,0 +1,97 @@
+.about {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 6rem;
+    /* background-color: var(--bg-color); */
+    overflow: hidden;
+}
+
+#about {
+    background-color: var(--bg-color);
+}
+
+#about-aarav {
+    background-color: var(--second-bg-color);
+}
+
+#about-advaita {
+    background-color: var(--bg-color);
+}
+
+.about .about-text {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.about .about-text .heading {
+    text-align: left;
+    font-size: 4.5rem;
+}
+
+.about .about-text p {
+    font-size: 1.6rem;
+}
+
+.about .about-text h4 {
+    margin-top: 1.5rem;
+    font-size: 3rem;
+}
+
+.prompt {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: var(--text-color);
+}
+
+.about .about-images-container {
+    width: 35vw;
+    height: auto;
+    flex-shrink: 0;
+    margin-bottom: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.about .about-images-container .about-image {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: fill;
+    cursor: pointer;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.329);
+    border-radius: 20px;
+    display: block;
+}
+
+
+@media (max-width: 991px) {
+
+    /* ABOUT */
+    .about .about-images-container {
+        width: 50vw;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* ABOUT */
+    .about {
+        /* display: block; */
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+
+    .about .about-images-container {
+        width: 70vw;
+        margin-top: 5rem;
+        aspect-ratio: 1/1.2;
+        display: block;
+        align-self: center;
+    }
+
+}
