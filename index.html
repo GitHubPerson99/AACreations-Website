@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AACreations</title>
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+</head>
+
+<body>
+    <!-- header design -->
+
+    <header class="header">
+        <a href="/index.html" class="logo"><img src="/images/logo.svg" alt=""><span>AACreations</span></a>
+
+        <div id="menu-icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </div>
+
+        <nav class="navbar">
+            <a href="/index.html" class="active">Home</a>
+            <a href="/projects/index.html">Projects</a>
+            <a href="/about/index.html">About Us</a>
+            <a href="/contact/index.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Enter your parts in a section tag. add a class as well -->
+    <section class="main">
+        <div class="leftSide">
+            <h2 class="hiwe"> Hi, We are </h2>
+            <h1 class="aacreations"> AA <span>Creations</span> </h1>
+            <p class="MainText">
+                We are Aarav and Advaita, siblings passionate about creating, exploring, and sharing our journey. At
+                AACreations, we turn ideas into reality through coding and innovative projects. Beyond tech, we love
+                hiking and discovering stories through books, finding inspiration in every trail and page. Through our
+                adventures and creations, we aim to inspire curiosity and creativity in others. Join us as we innovate,
+                explore, and share our experiences with you!
+
+            </p>
+            <div class="btn btn-inverse"> <a href="https://google.com"> Learn more about us </a> </div>
+        </div>
+
+        <div class="rightSide">
+            <div class="box3">
+                <img class="logo-Circle" src="images/AACreations.png" alt="Logo Of AACreations">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section class="projects">
+        <div class="leftSide2">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <img class="swiper-slide sl1" src="images/hero-image.png" alt="Project Icon 1">
+                    <img class="swiper-slide sl2" src="images/coming-soon.jpg" alt="Project Icon 2">
+
+                    <!-- <div class="swiper-slide">
+                        <img src="images/hero-image.png" alt="Project Icon 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/coming-soon.jpg" alt="Project Icon 2">
+                    </div> -->
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <div class="rightSide2">
+            <h2 class="ProjectTitle"> Our <span class="span">Projects</span> </h2>
+            <p class="ProjectsText">
+                We have created numerous projects together using science, math, coding, physics and way more which look
+                amazing in different ways.
+                We worked together to create these projects and we both had different mindsets and different views but
+                used them together to create an amazing output.
+                By creating these projects we both improve our intelligence and become curious to learn about everything
+                and create wore projects by .
+            </p>
+            <div class="btn btn-project"> <a href="https://chess.com"> View our Projects </a> </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+
+    <section class="ContactUs">
+        <div class="leftSide3">
+            <h2 class="contactHeader"> <span>Get In</span> Touch </h2>
+            <p class="contactText">
+                We love it when people ask us questions and share their curiosity! Whether it's about our projects,
+                adventures, or how we approach creativity, your questions inspire us and spark great conversations.
+                Curiosity fuels everything we do, and we're excited to connect with others who share that passion.
+                Do you have something you'd like to ask or discuss? We'd love to hear from you! Just click the button
+                below,
+                and let's start a conversation. Together, we can explore ideas, share insights, and inspire each other!
+            </p>
+            <div class="btn btn-contact"><a href="https://chesskid.com"> Contact Us </a></div>
+        </div>
+
+        <div class="rightSide3">
+            <div class="box">
+                <img class="contactIcon" src="images/ContactUs.png" alt="Contact Us Icon">
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- footer design -->
+
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>AACreations</h3>
+            </div>
+            <div class="footer-links">
+                <a href="/index.html">Home</a>
+                <a href="/projects/index.html">Projects</a>
+                <a href="/about/index.html">About</a>
+                <a href="/contact/index.html">Contact Us</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AACreations. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="/js/script.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+</body>
+
+</html>

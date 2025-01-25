@@ -1,0 +1,251 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 0;
+    gap: 50px;
+}
+
+.main .leftSide {
+    flex: 3;
+}
+
+.main .hiwe {
+    color: var(--text-color);
+    font-size: 3.5rem;
+}
+
+.main .hiwe:hover {
+    text-shadow: 0 0 5px white, 0 0 10px var(--main-color);
+}
+
+.main .aacreations {
+    color: var(--main-color);
+    font-size: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aacreations:hover {
+    text-shadow: 0 0 5px white,
+        0 0 15px var(--main-color);
+}
+
+.main .MainText {
+    font-size: 2rem;
+    flex: 1;
+}
+
+.main .btn-inverse {
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+
+.main .btn-inverse a {
+    color: white;
+}
+
+.main .rightSide {
+    flex: 1;
+}
+
+.box3 {
+    overflow: hidden
+}
+
+.main .box3 .logo-Circle {
+    height: 99%;
+    width: 99%;
+    object-fit: contain;
+    float: right;
+    transition: all 0.4s ease-in;
+}
+
+.main .box3:hover {
+    transform: translatey(-10px);
+}
+
+/* Projects */
+
+.projects {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 0;
+    gap: 50px;
+}
+
+.projects .rightSide2 {
+    flex: 3;
+}
+
+.projects .leftSide2 {
+    flex: 1;
+}
+
+.projects .ProjectTitle {
+    font-size: 3.5rem;
+    color: white;
+}
+
+.projects .ProjectTitle .span {
+    color: var(--text-color);
+}
+
+.projects .ProjectTitle:hover {
+    text-shadow: 0 0 5px var(--main-color), 0 0 15px white;
+}
+
+.swiper {
+    width: 30vw;
+    height: 100%;
+}
+
+.swiper-slide {
+    align-self: center;
+}
+
+
+.projects .ProjectsText {
+    font-size: 2rem;
+    color: white;
+}
+
+.projects .ProjectIcon,
+.projects .ProjectsText {
+    padding: 0, 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.projects .btn-project {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px white;
+}
+
+.projects .btn-project a {
+    color: var(--text-color);
+}
+
+.projects .btn-project:hover {
+    box-shadow: 0 0 20px white;
+}
+
+
+/* Contact Us */
+
+.ContactUs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 0;
+}
+
+.ContactUs .rightSide3 {
+    flex: 1;
+}
+
+.ContactUs .leftSide3 {
+    flex: 3;
+}
+
+.ContactUs .contactHeader {
+    font-size: 3.5rem;
+    color: var(--text-color);
+}
+
+.ContactUs .contactHeader:hover {
+    text-shadow: 0 0 5px white, 0 0 10px var(--main-color);
+}
+
+.ContactUs .contactIcon .contactText {
+    padding: 0, 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.ContactUs .contactText {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.box {
+    overflow: hidden
+}
+
+.ContactUs .box .contactIcon {
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    float: right;
+    transition: all 0.4s ease-in;
+}
+
+.ContactUs .box:hover {
+    transform: translatey(-10px);
+}
+
+.ContactUs .btn-contact {
+    background-color: var(--main-color);
+    border-radius: 20px;
+}
+
+.ContactUs .btn-contact a {
+    color: white;
+}
+
+
+@media screen and (max-width: 1030px) {
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    .main .rightSide .box3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main .rightSide .box3 .logo-Circle {
+        width: 40%;
+        height: 40%;
+    }
+
+    @media screen and (max-width: 750px) {
+        .ContactUs {
+            flex-direction: column;
+        }
+
+        .ContactUs .rightSide3 .contactIcon {
+            padding-top: 50px;
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        .projects {
+            flex-direction: column;
+        }
+
+        .projects .leftSide2 .swiper .swiper-slide .sl1 {
+            height: 500px;
+            width: 500px;
+            object-fit: cover;
+        }
+
+        .projects .leftSide2 .swiper .swiper-slide .sl2 {
+            height: 350px;
+            width: 500px;
+            object-fit: cover;
+        }
+    }
+}

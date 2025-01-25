@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AACreations</title>
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/projects.css">
+</head>
+
+<body>
+    <!-- header design -->
+
+    <header class="header">
+        <a href="/index.html" class="logo"><img src="/images/logo.svg" alt=""><span>AACreations</span></a>
+
+        <div id="menu-icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </div>
+
+        <nav class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/projects/index.html" class="active">Projects</a>
+            <a href="/about/index.html">About Us</a>
+            <a href="/contact/index.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <section class="projects" id="projects">
+        <div class="heading">
+            <h1>Our <span>Projects</span></h1>
+        </div>
+        <div class="search-bar">
+            <h2>Search Projects</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search projects...">
+                <div id="search-button"><i class='bx bx-search'></i></div>
+            </div>
+        </div>
+        <div class="container" id="projects-container">
+            <article class="card">
+                <a href="/projects/ACCPS/index.html" class="link">
+                    <div class="title">
+                        <h2>The Auto-Controlled Car Parking System</h2>
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </div>
+                    <p class="description">A car parking system that automates vehicle entry, space allocation, and exit using sensors and LED indicators.</p>
+                    <img src="ACCPS/images/hero-image.png" alt="" class="image">
+                </a>
+            </article>
+            <article class="card coming-soon">
+                <div class="overlay">
+                    <div class="text">Coming Soon</div>
+                </div>
+                <a href="" class="link">
+                    <div class="title">
+                        <h2>Future Project</h2>
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </div>
+                    <p class="description">Stay tuned for more exciting projects!</p>
+                    <img src="/images/projects_images/coming-soon.jpg" alt="" class="image">
+                </a>
+            </article>
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>AACreations</h3>
+            </div>
+            <div class="footer-links">
+                <a href="/index.html">Home</a>
+                <a href="/projects/index.html">Projects</a>
+                <a href="/about/index.html">About</a>
+                <a href="/contact/index.html">Contact Us</a>
+            </div>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AACreations. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <!-- custom js -->
+    <script src="/js/script.js"></script>
+    <script src="/js/projects.js"></script>
+</body>
+
+</html>
